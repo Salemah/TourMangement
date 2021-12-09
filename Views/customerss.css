@@ -27,15 +27,15 @@ body{
 }
 .list{
     list-style: none;
-    background-color: rgb(201, 225, 252);
-    border-left:1px solid rgb(255, 234, 45) ;
-    border-right:1px solid gray ;
+    background-color: #daf5eb;
+    border-left:1px solid rgb(81, 207, 207) ;
+    border-right:1px solid rgb(81, 207, 207) ;
     padding-top: 15px;
 }
 .list li{
     
     padding: 15px;
-    border-bottom: 1px solid rgb(26, 27, 27);
+    border-bottom: 1px solid rgb(81, 207, 207);
 
 }
 .list li a{
@@ -62,7 +62,7 @@ text-decoration: none;
 .top-section{
     text-align: center;
     width: 100%;
-    background-color:#f2ff3ee3 ;
+    background-color:#f3ff50 ;
     padding:20px 0px ;
 }
 .right-middle h1{
@@ -175,4 +175,16 @@ table,th,td{
 }
 
         
-        
+.Guide-Data{
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px ;
+    padding:10px;
+    background-color: rgb(122, 191, 255);
+
+}
+.Guide-Data p{
+   
+    padding:10px;
+    font-size: 19px;
+}

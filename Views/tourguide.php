@@ -20,7 +20,7 @@ if(isset($_SESSION['flag']))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tourguide.css">
+    <link rel="stylesheet" href="tourguides.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -33,61 +33,67 @@ if(isset($_SESSION['flag']))
  <body>
 
     <main>
+        <br> <br>
         <div class="main-container">
             <div class="color">
                 <div class="profile-pic">
-                    <div class="top-pic">
-                        <img src="images/pro.jpg" alt="">
-                        <p><?= $row['username'] ?></p>
-                        <p><?php  
-                        echo $_SESSION['email'];
-                        ?></p>
+                    <br> <br> <br>
+                    <div ">
+                       
                     </div>
                     <div class="list">
-                        <li> <a href="">My Profile </a> </li>
+                        <li> <a href="tourguideprofile.php">My Profile </a> </li>
                         <li> <a href="">Recent Guide </a> </li>
                         <li> <a href="">Total Guide </a> </li>
                         <li> <a href="">Edit Profile </a> </li>
                         <li> <a href="">Tour Packege </a> </li>
-                        <button id="logout-button"><a href="logout.php">Logout</a></button>
+                       
                     </div>
+                    <br>
+                    <button  class="myButton"><a href="logout.php">Logout</a></button>
                 </div>
             </div>
             <div class="right-top">
                 <div class="top-section">
-                    <h1>My profile</h1>
+                    
+                <h2 style="color:darkblue;">Hello <?= $row['username'] ?> welcome to tour guide page </h2>
 
                 </div>
                 <div class="right-middle">
                     <div class="">
-                        <h1>Profile Details:</h1>
+                      <br>
                         <div class="Guide-Data">
-                            <p>Id: <?= $row['id'] ?></p>
-                            <p>Name: <?= $row['username'] ?></p>
-                            <p>Email: <?= $row['email'] ?></p>
-                            <p>Phone: 0097897493</p>
-
+                        <h1 style="font-family: arial,"color:darkblue;" id="guide-p">Tour Guide Requests</h1>
                         </div>
+                        
                        
                         <div class="guide">
-                            <h1 id="guide-p">Packege Guide Price</h1>
+                            
                             <div class="bottom-setion">
                                 <div class="order">
-                                    <h1>Packege</h1>
-                                    <p>Packege Guide: <span class="packge-name">500</span> </p>
+                                    <h3>Mr Rahim has requested you for Sylhet tour</h3>
+                                    <br> <br> 
+                                    <button class="myButton">accept</button>    <button class="myButton">reject</button> 
                                 </div>
                                 <div class="order">
-                                    <h1>Recents Guide</h1>
-                                    <p>Recet Order Packege: <span class="packge-name">Sylet</span></p>
+                                <h3>Mr kabir has requested you for sajek tour</h3>
+                                    <br> <br> 
+                                    <button class="myButton">accept</button>    <button class="myButton">reject</button> 
                                 </div>
                                 <div class="order">
-                                    <h1>Guide Packege</h1>
-                                    <!-- <p>Recet Order Packege: <span class="packge-name">Sylet</span></p> -->
+                                <h3>Mr Salem has requested you for coxsbazar tour</h3>
+                                    <br> <br> 
+                                    <button class="myButton">accept</button>    <button class="myButton">reject</button> 
                                 </div>
 
-
+                               
 
                             </div>
+                            <br>
+
+                             <center><button class="myButton">Send your CV to all Clients</button>  <button class="myButton">Request clients to hire you</button></center>
+                           
+
                         </div>
 
 

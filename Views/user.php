@@ -22,7 +22,7 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="customerss.css">
     <title>UserProfile</title>
 </head>
 
@@ -32,7 +32,7 @@ if(isset($_SESSION['flag'])){
             <div class="color">
                 <div class="profile-pic">
                     <div class="top-pic">
-                       <h4> 20% sale going on Hurry Up!!</h4>
+                      <h2>20% sale </h2> <h4> going on Hurry Up!!</h4>
                         
                     </div>
                     <div class="list">
@@ -40,6 +40,9 @@ if(isset($_SESSION['flag'])){
                         <li> <a href="">Recent Order </a> </li>
                         <li> <a href="">Recent Tour </a> </li>
                         <li> <a href="">Tour guide </a> </li>
+                        
+                       
+                        
 
                     </div>
                     <br> <br> <br>
@@ -75,10 +78,10 @@ if(isset($_SESSION['flag'])){
                                     <h1 style="font-family:Comic Sans MS ;">sajek</h1>
                                     <br>
                                     <h4>2 days </h4>
-                                    <h5>price-4000tk</h5>
+                                    <h5>price-5000tk</h5>
                                     <br>
 
-                                    <a href="" class="myButtonbuy">Buy</a> 
+                                    <button onclick="sajekFunction()" class="myButtonbuy"> buy  </button>  
                                 </div>
                                 <div class="order">
                                     <h1 style="font-family:Comic Sans MS ;">coxsbazar</h1>
@@ -87,27 +90,27 @@ if(isset($_SESSION['flag'])){
                                     <h5>price-4000tk</h5>
                                     <br>
 
-                                    <a href="" class="myButtonbuy">Buy</a> 
+                                    <button onclick="coxsbazarFunction()" class="myButtonbuy"> buy </button>  
                                    
                                 </div>
                                 <div class="order">
                                     <h1 style="font-family:Comic Sans MS;">bandarban </h1>
                                     <br>
                                     <h4>2 days and 3 nights</h4>
-                                    <h5>price-4000tk</h5>
+                                    <h5>price-5000tk</h5>
                                     <br>
 
-                                    <a href="" class="myButtonbuy">Buy</a> 
+                                    <button onclick="bandarbanFunction()" class="myButtonbuy"> buy  </button>  
                                    
                                 </div>
                                 <div class="order">
                                     <h1 style="font-family:Comic Sans MS ;" > sylhet</h1>
                                     <br>
                                     <h4>Day trip</h4>
-                                    <h5>price-4000tk</h5>
+                                    <h5>price-3000tk</h5>
                                     <br>
 
-                                    <a href="" class="myButtonbuy">Buy</a> 
+                                    <button onclick="sylhetFunction()" class="myButtonbuy"> buy  </button>  
                                 </div>
                                 </div>
                                 <div class="order">
@@ -115,11 +118,11 @@ if(isset($_SESSION['flag'])){
                                     <h1 style="font-family:Comic Sans MS;">Tanguar Haor</h1>
                                     <br>
                                     <h4>2 days and 3 nights</h4>
-                                    <h5>price-4000tk</h5>
+                                   
+                                    <h5>price-7000tk</h5>
                                     <br>
 
-                                    <a href="" class="myButtonbuy">Buy</a> 
-                                </center>
+                                   <button onclick="tanguarFunction()" class="myButtonbuy"> buy  </button>      
                                    
                                 </div>
                                 
@@ -148,9 +151,38 @@ if(isset($_SESSION['flag'])){
 
 
     </main>
+
+    <script>
+
+function tanguarFunction() {
+  alert("Tanguar haor package successfully added to cart");
+}
+
+function coxsbazarFunction() {
+  alert("Coxs bazar package successfully added to cart");
+}
+
+function sylhetFunction() {
+  alert("Sylhet package successfully added to cart");
+}
+
+function bandarbanFunction() {
+  alert("Bandarban package successfully added to cart");
+}
+function sajekFunction() {
+  alert("Sajek package successfully added to cart");
+}
+
+
+
+</script>
+
 </body>
 
 </html>
+
+
+
 <?php }else{
     header('location: Login.php');
 } ?>

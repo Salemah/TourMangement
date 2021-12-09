@@ -76,7 +76,7 @@ header{
 } */
 /* headerend */
 body{
-    background-color: rgba(137, 167, 185, 0.226);
+    background-color: rgb(210, 247, 250);
 }
 .top-pic{
     background-color: #197eb85e;
@@ -100,13 +100,13 @@ body{
 .list{
     list-style: none;
     background-color: white;
-    border-left:1px solid gray ;
-    border-right:1px solid gray ;
+    border-left:1px solid rgb(255, 255, 255) ;
+    border-right:1px solid rgb(255, 250, 250) ;
     /* padding-top: 15px; */
 }
 .list li{
     /* margin-bottom: 10px; */
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(185, 240, 247);
     padding: 15px;
 
 }
@@ -134,13 +134,14 @@ text-decoration: none;
 
 }
 .right-top{
-    background-color: rgba(137, 167, 185, 0.226);
+    background-color: rgba(255, 131, 249, 0.226);
+    height: 590px;
 
 }
 .top-section{
     text-align: center;
     width: 100%;
-    background-color:#197eb85e ;
+    background-color:rgb(6, 250, 177) ;
     padding:20px 0px ;
 }
 
@@ -154,7 +155,7 @@ text-decoration: none;
     margin-top: 15px;
     margin-right: 15px ;
     padding:10px;
-    background-color: #197eb85e;
+    background-color: rgb(122, 191, 255);
 
 }
 .Guide-Data p{
@@ -181,7 +182,7 @@ text-decoration: none;
     margin-bottom: 20px;
 }
 .order{
-    background-color: #197eb85e;
+    background-color: rgb(250, 156, 245);
     text-align: center;
     margin-right: 10px;
     padding: 30px 90px;
@@ -200,4 +201,25 @@ text-decoration: none;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+}
+
+.myButton {
+	
+	
+	background-color:#21a4f05e;
+	border-radius:3px;
+	border:1px solid #44beb8;
+	display:inline-block;
+	cursor:pointer;
+	color:#333030;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
 }
