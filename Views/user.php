@@ -22,7 +22,7 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="users.css">
+    <link rel="stylesheet" href="customer.css">
     <title>UserProfile</title>
 </head>
 
@@ -32,19 +32,20 @@ if(isset($_SESSION['flag'])){
             <div class="color">
                 <div class="profile-pic">
                     <div class="top-pic">
-                        <img src="images/pro.jpg" alt="">
+                       <h4> 20% sale going on Hurry Up!!</h4>
                         
                     </div>
                     <div class="list">
-                        <li> <a href="userprofile.php">My Profile </a> </li>
+                        <li style="color: black;"> <a href="userprofile.php">My Profile </a> </li>
                         <li> <a href="">Recent Order </a> </li>
                         <li> <a href="">Recent Tour </a> </li>
-                        <li> <a href="">Edit Profile </a> </li>
-                        
+                        <li> <a href="">Tour guide </a> </li>
 
                     </div>
-                    <br> <br> <br> <br> <br>
-                    <button id="logout-button"> <a href="logout.php"> <b> Logout</b> </a></button>
+                    <br> <br> <br>
+                    <a href="logout.php" class="myButton">Logout</a>  
+                        
+                   
                 </div>
             </div>
             <div class="right-top">
@@ -70,51 +71,62 @@ if(isset($_SESSION['flag'])){
                             <div class="bottomtop-setion"> 
                                 
                                 <div class="order">
-                                
-                                    <h1>sajek</h1>
+                               
+                                    <h1 style="font-family:Comic Sans MS ;">sajek</h1>
                                     <br>
+                                    <h4>2 days </h4>
+                                    <h5>price-4000tk</h5>
                                     <br>
+
+                                    <a href="" class="myButtonbuy">Buy</a> 
+                                </div>
+                                <div class="order">
+                                    <h1 style="font-family:Comic Sans MS ;">coxsbazar</h1>
                                     <br>
-                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+                                    <h4>4 days and 3 nights</h4>
+                                    <h5>price-4000tk</h5>
+                                    <br>
+
+                                    <a href="" class="myButtonbuy">Buy</a> 
                                    
                                 </div>
                                 <div class="order">
-                                    <h1>coxsbazar</h1>
+                                    <h1 style="font-family:Comic Sans MS;">bandarban </h1>
                                     <br>
+                                    <h4>2 days and 3 nights</h4>
+                                    <h5>price-4000tk</h5>
                                     <br>
-                                    <br>
-                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+
+                                    <a href="" class="myButtonbuy">Buy</a> 
                                    
                                 </div>
                                 <div class="order">
-                                    <h1>bandarban </h1>
+                                    <h1 style="font-family:Comic Sans MS ;" > sylhet</h1>
                                     <br>
+                                    <h4>Day trip</h4>
+                                    <h5>price-4000tk</h5>
                                     <br>
-                                    <br>
-                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
-                                   
-                                </div>
-                                <div class="order">
-                                    <h1>sylhet</h1>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
-                                   
+
+                                    <a href="" class="myButtonbuy">Buy</a> 
                                 </div>
                                 </div>
                                 <div class="order">
-                                    <h1>sylhet</h1>
+                                <center> 
+                                    <h1 style="font-family:Comic Sans MS;">Tanguar Haor</h1>
                                     <br>
+                                    <h4>2 days and 3 nights</h4>
+                                    <h5>price-4000tk</h5>
                                     <br>
-                                    <br>
-                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+
+                                    <a href="" class="myButtonbuy">Buy</a> 
+                                </center>
                                    
                                 </div>
                                 
                             </div>
+                            <br> <br> <br>
 
-                           
+                            <center> <a href="logout.php" class="myButton">Checkout</a>  </center>
                         </div>
 
 

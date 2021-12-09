@@ -4,10 +4,10 @@
     
 }
 body{
-    background-color: rgba(137, 167, 185, 0.226);
+    background-color: rgba(255, 251, 0, 0.226);
 }
 .top-pic{
-    background-color: #0000005e;
+    background-color: #ff00005e;
     padding: 40px 20px;
    
 }
@@ -27,15 +27,15 @@ body{
 }
 .list{
     list-style: none;
-    background-color: white;
-    border-left:1px solid gray ;
+    background-color: rgb(201, 225, 252);
+    border-left:1px solid rgb(255, 234, 45) ;
     border-right:1px solid gray ;
     padding-top: 15px;
 }
 .list li{
     
     padding: 15px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(26, 27, 27);
 
 }
 .list li a{
@@ -54,13 +54,15 @@ text-decoration: none;
 
 }
 .right-top{
-    background-color: rgba(137, 167, 185, 0.226);
-    width: 80%;
+    background-color: rgba(255, 166, 0, 0.226);
+    width: 100%;
+    height: 590px;
+    
 }
 .top-section{
     text-align: center;
     width: 100%;
-    background-color:#197eb85e ;
+    background-color:#f2ff3ee3 ;
     padding:20px 0px ;
 }
 .right-middle h1{
@@ -74,14 +76,14 @@ table,th,td{
 }
 
 #tddata th{
-    background-color:#197eb85e ;
+    background-color:#00d8a2e1 ;
     padding:5px 103px  ;
     border: none;
     text-align: center;
     border: 1px solid rgb(3, 3, 10);
 }
 #tddata td{
-    background-color:#acadad5e ;
+    background-color:#000000da ;
     text-align: center;
     padding:10px 0 ;
     border: 1px solid rgb(3, 3, 10);
@@ -108,7 +110,7 @@ table,th,td{
 
 }
 .order{
-    background-color: #197eb85e;
+    background-color: #00f853;
     width: 100%;
     margin-top: 100px;
     margin-left: 10px;
@@ -126,3 +128,51 @@ table,th,td{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.myButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#004169;
+	border-radius:3px;
+	border:1px solid #c6c5ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myButtonbuy {
+	background-color:#daf5eb;
+	border-radius:9px;
+	border:1px solid #c7c7c7;
+	display:inline-block;
+	cursor:pointer;
+	color:#0066ff;
+	font-family:Arial;
+	font-size:17px;
+	padding:9px 15px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #70756f;
+}
+.myButtonbuy:hover {
+	background-color:#5cbf2a;
+}
+.myButtonbuy:active {
+	position:relative;
+	top:1px;
+}
+
+        
+        

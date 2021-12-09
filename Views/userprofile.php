@@ -21,7 +21,7 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Views/userprofile.css">
+    <link rel="stylesheet" href="../Views/_Userprofile.css">
     <title>Document</title>
 </head>
 
@@ -51,7 +51,7 @@ if(isset($_SESSION['flag'])){
       <td><b>Phone number :</b> 01785555256</td>
     </tr>
     <tr>
-      <td> <center><a href="user.php">return back</a></center></td>
+      <td> <center> <a href="user.php" class="myButton">Return Back</a> </center></td>
     </tr>
     
   </tbody>
@@ -65,27 +65,6 @@ if(isset($_SESSION['flag'])){
   
   
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

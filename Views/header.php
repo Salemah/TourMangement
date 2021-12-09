@@ -26,7 +26,7 @@
 
     <!-- headerstart -->
     <header>
-        <img id="logo" src="../Resources/images/travel-luggage.png" alt="">
+        <img id="logo" src="../Resources/images/logo.png" alt="">
         <nav class="">
             <ul class="nav-bar">
                 <li><a href="index.php">Home</a></li>
