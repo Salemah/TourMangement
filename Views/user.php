@@ -22,7 +22,7 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="users.css">
     <title>UserProfile</title>
 </head>
 
@@ -33,20 +33,18 @@ if(isset($_SESSION['flag'])){
                 <div class="profile-pic">
                     <div class="top-pic">
                         <img src="images/pro.jpg" alt="">
-                        <p><?= $row['username'] ?></p>
-                        <p><?php  
-                        echo $_SESSION['email'];
-                        ?>
-                        </p>
+                        
                     </div>
                     <div class="list">
-                        <li> <a href="">My Profile </a> </li>
+                        <li> <a href="userprofile.php">My Profile </a> </li>
                         <li> <a href="">Recent Order </a> </li>
                         <li> <a href="">Recent Tour </a> </li>
                         <li> <a href="">Edit Profile </a> </li>
-                        <button id="logout-button"><a href="logout.php">Logout</a></button>
+                        
 
                     </div>
+                    <br> <br> <br> <br> <br>
+                    <button id="logout-button"> <a href="logout.php"> <b> Logout</b> </a></button>
                 </div>
             </div>
             <div class="right-top">
@@ -67,44 +65,56 @@ if(isset($_SESSION['flag'])){
 
                 </div>
                 <div class="right-middle">
-                    <div class="">
-                        <h1 id="profile-name">Profile Details:</h1>
-                        <table id="tddata">
-                            <th>Name</th>
-                            <th>Id</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Password</th>
-                            <tr>
-                                <td><?= $row['username'] ?></td>
-                                <td><?= $row['id'] ?></td>
-                                <td><?= $row['email'] ?></td>
-                                <td>0097897493</td>
-                                <td><?= $row['userpassword'] ?></td>
-                            </tr>
-                        </table>
-                        <div class="">
-                            <div class="bottomtop-setion">
+                    
+                   
+                            <div class="bottomtop-setion"> 
+                                
                                 <div class="order">
-                                    <h1>Travel History</h1>
-                                    <p>Last Packege: <span class="packge-name">Sajek</span> </p>
+                                
+                                    <h1>sajek</h1>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+                                   
                                 </div>
                                 <div class="order">
-                                    <h1>Recents Travel</h1>
-                                    <p>Recet Order Packege: <span class="packge-name">Sylet</span></p>
+                                    <h1>coxsbazar</h1>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+                                   
                                 </div>
+                                <div class="order">
+                                    <h1>bandarban </h1>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+                                   
+                                </div>
+                                <div class="order">
+                                    <h1>sylhet</h1>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+                                   
+                                </div>
+                                </div>
+                                <div class="order">
+                                    <h1>sylhet</h1>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button id="logout-button"> <a href="logout.php"> <b> Buy</b> </a></button>
+                                   
+                                </div>
+                                
                             </div>
 
-                            <div class="bottom">
-                                <div class="order">
-                                    <h1>Tour Guide </h1>
-                                    <p>Last Packege: <span class="packge-name">Sajek</span> </p>
-                                </div>
-                                <div class="order">
-                                    <h1>Cancel Tour</h1>
-                                    <!-- <p>Recet Order Packege: <span class="packge-name">Sylet</span></p> -->
-                                </div>
-                            </div>
+                           
                         </div>
 
 
