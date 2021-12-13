@@ -11,7 +11,7 @@
     /* justify-content: space-between; */
 }
 .img-head{
-    display: flex;
+   
     margin-top: 10px;
     
 }
@@ -53,10 +53,12 @@
 }
 #logout-button{
     margin-top: 50px;
+    margin-bottom: 20px;
     background-color: #067DC2;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    color: whitesmoke;
 }
 .right-dashboard{
     background-color: white;
@@ -99,13 +101,14 @@
 /* table style */
 .styled-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    /* //margin: 25px 0; */
     font-size: 15px;
     font-family: sans-serif;
     width: 76%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-.styled-table thead tr {
+
+.styled-table tr th {
     background-color: #009879;
     color: #ffffff;
     text-align: left;
@@ -125,13 +128,11 @@
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
+
 hr{
-    width: 70%;
+    width: 100%;
     margin-left: -4px;
+    margin-bottom: 10px;
 }
 .btn{
     background-color:#067DC2 ;
@@ -139,4 +140,21 @@ hr{
     color: white;
     padding: 8px;
     border-radius: 6px;
+}
+/* jquery button */
+
+.list-item button{
+    border:  none;
+    background: transparent;
+    margin-top: 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 9px;
+}
+button:hover{
+    padding: 8px 9px;
+    background: rgb(162, 192, 236);
+    border-radius: 5px;
 }
