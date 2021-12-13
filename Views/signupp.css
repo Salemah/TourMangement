@@ -1,0 +1,91 @@
+body {
+  background-color: #00ff62;
+  font-family: "Roboto", sans-serif;
+}
+
+.signup-box {
+  width: 400px;
+  height: 800px;
+  margin: auto;
+  background-color: #ffffff49;
+  border-radius: 0px;
+}
+
+.login-box {
+  width: 260px;
+  height: 220px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 340px;
+  margin-left: 20px;
+  
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+  
+}
+form a{
+    text-decoration: none;
+    
+    padding: 10px 130px;
+  width: 320px;
+  height: 45px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #067DC2;
+  color: rgb(2, 2, 2);
+  font-size: 18px;
+
+}
+
+#confrm{
+    margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.para-2 {
+  text-align: center;
+  color: rgb(90, 25, 25);
+  font-size: 15px;
+  margin-top: -10px;
+}
+.para-2 a {
+  color: #27005a;
+  font-size: 20px;
+}
+
+form input[type=submit]{
+  margin-top: 10px;
+  background-color: #067DC2;
+
+}
