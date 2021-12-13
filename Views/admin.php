@@ -9,6 +9,10 @@ if(isset($_SESSION['flag'])){
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_assoc($result);
     
+     
+
+                        
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +21,8 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="adminn.css">
+    <link rel="stylesheet" href="btton test.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Admin</title>
@@ -30,24 +35,23 @@ if(isset($_SESSION['flag'])){
 
                 <div class="img-head">
                     <div class="left-admin">
-                        <img id="imgs" src="images/travel-luggage.png" alt="">
+                        <img id="imgs" src="../Resources/images/travel.jpg" alt="">
                     </div>
                     <div class="right-admin">
                         <p><?= $row['username'] ?></p>
                        <p> <?php 
                         echo $_SESSION['email'];
                         ?></p>
-                        <!-- <h3>Admin</h3>
-                        <span>admin@gmail.com</span> -->
+        
 
                     </div>
 
                 </div>
                 <div class=" list-item ">
-                    <li> <a href="#"> Dashboard</a> </li>
-                    <li><a href="#"> User Data </a></li>
-                    <li><a href="#">Packeges</a></li>
-                    <li><a href="#">Accounts</a></li>
+                    <button id="dashboard">Dashboard</button><br>
+                    <button id="load">Users</button><br>
+                    <button>Packeges</button><br>
+                    <button>Accounts</button><br>
                     <button id="logout-button"><a href="logout.php">Logout</a></button>
                  </div>
             </div>
@@ -56,7 +60,7 @@ if(isset($_SESSION['flag'])){
                 <div class="image-box">
                     <div class="first-box" id="s1">
                         <p>TotalCustomer</p>
-                        <h1>Person:800</h1>
+                        <h1>Person:</h1>
                         <h3>Increased By 60%</h3>
                     </div>
                     <div class="first-box"id="s2">
@@ -71,8 +75,11 @@ if(isset($_SESSION['flag'])){
                     </div>
         
                 </div>
+                <br>
                 <hr>
-                <div class="">
+
+                
+                <!-- <div class="">
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -105,6 +112,40 @@ if(isset($_SESSION['flag'])){
                             
                         </tbody>
                     </table>
+                </div> -->
+                <script src="../jquery.js"></script>
+                <div id="main">
+                <script>
+                       $(document).ready(function(){
+			             $("#load").on("click",function(e){
+                            $("#main").show();
+				        $.ajax({  
+				        	url:"userdata.php",
+					        type:"POST",
+					        success:function(data){
+						    $("#main").html(data);
+					}
+				});
+			});
+		});
+                </script>
+                </div>
+                <!-- dashboard -->
+                <div id="main">
+                <script>
+                       $(document).ready(function(){
+			             $("#dashboard").on("click",function(e){
+                            $("#main").hide();
+				//         $.ajax({  
+				//         	url:"userdata.php",
+				// 	        type:"POST",
+				// 	        success:function(data){
+				// 		    $("#main").html(data);
+				// 	}
+				// });
+			});
+		});
+                </script>
                 </div>
 
 
@@ -114,9 +155,10 @@ if(isset($_SESSION['flag'])){
             </div>
 
         </div>
+
       
     </main>
-
+    
 </body>
 
 </html>
