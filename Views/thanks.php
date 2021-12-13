@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="font-family:Comic Sans MS;"> Successfully Purchased</h1>
+    <h1 style="font-family:Comic Sans MS;"> Successfully Purchased..</h1>
 </body>
 </html>
