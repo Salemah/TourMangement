@@ -3,9 +3,9 @@
 
 <head>
   <title>Sign Up | By Code Info</title>
-  <link rel="stylesheet" href="../Views/signup.css" />
+  <link rel="stylesheet" href="../Views/signupp.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
-  <script src="../controllers/signupvalidate.js"></script>
+  <script src="../controllers/signupvalidator.js"></script>
 </head>
 
 <body>
@@ -18,8 +18,7 @@
 
       <label for="username"></label> <br> <br>
       <input " type=" text" name="username" id="username" placeholder="username" />
-      <div style="color: red;" id="usernameerror"></div>
-
+     <center> <small class="validate" id="usernameerror"></small>  </center> 
 
 
       <label style="font-family: Sans-serif ; color: #12044e" for="usertype"> Choose your role:</label>
@@ -33,22 +32,22 @@
 
 
 
-      <label for="email"></label> <br>
+      <label for="email"></label> 
       <input type="email" name="email" id="email" placeholder="Email" />
-      <div style="color: red;" id="emailerror"></div>
+     <center> <small class="validate" id="emailerror"></small></center> 
 
 
-      <label for="userpassword"></label> <br>
+      <label for="userpassword"></label> 
       <input type="password" name="userpassword" id="userpassword" placeholder="Password" />
-      <div style="color: red;" id="userpassworderror"></div>
+     <center><small class="validate" id="userpassworderror"></small></center> 
 
 
-      <label for="confirmpassword"></label> <br>
+      <label for="confirmpassword"></label> 
       <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" />
-      <div style="color: red"; id="confirmpassworderror" ></div>
+     <center> <small class="validate" id="confirmpassworderror" ></small> </center>
 
 
-      <label for="submit"></label> <br>
+      <label for="submit"></label> 
       <input style="margin-top:10px" id="btn" type="submit" name="Submit" value="submit">
 
 

@@ -17,7 +17,7 @@ function form() {
 
     // Validate username
     if (username == "") {
-        printError("usernameerror", "শালারপুত Username দে");
+        printError("usernameerror", "Enter your Username");
     } else {
         printError("usernameerror", "");
         usernameerror = false;
@@ -25,7 +25,7 @@ function form() {
 
     // Validate email
     if (email == "") {
-        printError("emailerror", "শালারপুত Email দে");
+        printError("emailerror", "Enter your Email");
     } else {
         printError("emailerror", "");
         emailerror = false;
@@ -33,7 +33,7 @@ function form() {
 
     // Validate userpassword
     if (userpassword == "") {
-        printError("userpassworderror", "PASSWORD দে বেয়াদব কোথাকার");
+        printError("userpassworderror", "Enter your Password");
     } else {
         printError("userpassworderror", "");
         userpassworderror = false;
@@ -41,7 +41,7 @@ function form() {
 
     // Validate confirmpassword
     if (confirmpassword == "") {
-        printError("confirmpassworderror", "PASSWORD দে বেয়াদব কোথাকার");
+        printError("confirmpassworderror", "Confirm Your Password");
     } else {
         printError("confirmpassworderror", "");
         confirmpassworderror = false;

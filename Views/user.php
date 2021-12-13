@@ -22,7 +22,7 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="customerss.css">
+    <link rel="stylesheet" href="customers.css">
     <title>UserProfile</title>
 </head>
 
@@ -60,7 +60,10 @@ if(isset($_SESSION['flag'])){
                      foreach($data['information'] as $b)
                      { ?>
 
-                      <h1> <b> <?php echo $b['info']; ?> </b>   </h1> 
+                      <h2> <b> <?php echo "Hey "  ,$row['username'];   ?> </b>   </h2> 
+
+                      <h3> <b> <?php echo   $b['info']; ?> </b>   </h3> 
+
 
                     <?php 
                        }
@@ -123,31 +126,32 @@ if(isset($_SESSION['flag'])){
                                     <br>
 
                                    <button onclick="tanguarFunction()" class="myButtonbuy"> buy  </button>      
-                                   
+                                  
                                 </div>
                                 
+                                
                             </div>
-                            <br> <br> <br>
+                            <br> <br>
 
-                            <center> <a href="logout.php" class="myButton">Checkout</a>  </center>
-                        </div>
-
+                            <center>  <input type="button"  onclick="checkoutFunction()"  class="myButtonbuy" id="button" value="Confirm Purchase">  </center>
+                           
+                            <center> <div class="thanks"  for="thanks" id="content"> </div></center>
+                           
 
 
                     </div>
+                    
 
 
 
                 </div>
+              
+
 
             </div>
 
         </div>
-        <!-- rifht site -->
-        <div class="">
-
-
-        </div>
+      
 
 
     </main>
@@ -171,11 +175,28 @@ function bandarbanFunction() {
 }
 function sajekFunction() {
   alert("Sajek package successfully added to cart");
+
+ 
+
+}
+
+</script>
+
+<script>
+
+function checkoutFunction() {
+
+
+    $('#content').load('thanks.php');
+
+
 }
 
 
-
 </script>
+
+<script type="text/javascript" src="jquery.js"></script>
+
 
 </body>
 
