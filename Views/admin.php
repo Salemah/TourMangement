@@ -8,7 +8,9 @@ if(isset($_SESSION['flag'])){
     $sql = "select * from users where email='$email'";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_assoc($result);
-    
+    $rr = "select id from users order by id";
+    $query_run = mysqli_query($conn, $rr );
+    $rows = mysqli_num_rows($query_run);
      
 
                         
@@ -60,10 +62,10 @@ if(isset($_SESSION['flag'])){
                 <div class="image-box">
                     <div class="first-box" id="s1">
                         <p>TotalCustomer</p>
-                        <h1>Person:</h1>
+                        <h1>Person : <?= ''.$rows.'' ?> </h1>
                         <h3>Increased By 60%</h3>
                     </div>
-                    <div class="first-box"id="s2">
+                    <div class="first-box"id="s2"> 
                         <p>TotalPackege</p>
                         <h1>Packege:8</h1>
                         <h3>Increased By 60%</h3>
