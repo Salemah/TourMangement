@@ -36,8 +36,8 @@ if(isset($_SESSION['flag'])){
                         
                     </div>
                     <div class="list">
-                        <li style="color: black;"> <a href="userprofile.php">My Profile </a> </li>
-                        <li> <a href="">Recent Order </a> </li>
+                        <li style="color: black;"> <a  id="info">My Profile </a> </li>
+                        <li> <a id="infoPackege">Recent Order </a> </li>
                         <li> <a href="">Recent Tour </a> </li>
                         <li> <a href="">Tour guide </a> </li>
                         
@@ -71,10 +71,16 @@ if(isset($_SESSION['flag'])){
                     ?>
 
                 </div>
-                <div class="right-middle">
-                    
+                <script src="../jquery.js"></script>
+                
+                <div id="main">
+                <script src="../Controllers/userjquery.js"></script>
+                </div>
+                <!-- <div class="right-middle">
+                
                    
                             <div class="bottomtop-setion"> 
+                            
                                 
                                 <div class="order">
                                
@@ -136,6 +142,10 @@ if(isset($_SESSION['flag'])){
                             <center>  <input type="button"  onclick="checkoutFunction()"  class="myButtonbuy" id="button" value="Confirm Purchase">  </center>
                            
                             <center> <div class="thanks"  for="thanks" id="content"> </div></center>
+                            <script src="../jquery.js"></script>
+                            <div class="userprofile">
+                                <script src="../Controllers/adninjquery.js"></script>
+                            </div>
                            
 
 
@@ -144,7 +154,7 @@ if(isset($_SESSION['flag'])){
 
 
 
-                </div>
+                </div> -->
               
 
 
