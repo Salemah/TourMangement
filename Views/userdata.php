@@ -30,7 +30,7 @@ else
 			$output.= "<tr><td>{$row["id"]}</td>
 			        <td>{$row["username"]}</td>
 			        <td>{$row["email"]}</td>
-			        <td></td>
+			       
 			        </tr>";
 		}
 		$output.='</table>';
