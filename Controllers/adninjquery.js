@@ -22,7 +22,19 @@ $(document).ready(function(){
     $("#packege").on("click",function(e){
        $("#main").show();
    $.ajax({  
-       url:"Packegedata.php",
+       url:"packegecontainer.php",
+       type:"POST",
+       success:function(data){
+       $("#main").html(data);
+}
+});
+});
+});
+$(document).ready(function(){
+    $("#profile").on("click",function(e){
+       $("#main").show();
+   $.ajax({  
+       url:"adminprofilr.php",
        type:"POST",
        success:function(data){
        $("#main").html(data);

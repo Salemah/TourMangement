@@ -59,7 +59,7 @@ if(isset($_SESSION['flag'])){
                     <button id="dashboard">Dashboard</button><br>
                     <button id="load">Users</button><br>
                     <button  id="packege">Packeges</button><br>
-                    <button>Accounts</button><br>
+                    <button id="profile">My Profile</button><br>
                   
                     <button  id="logout-button"><a href="logout.php">Logout</a></button>
                  </div>
@@ -82,14 +82,17 @@ if(isset($_SESSION['flag'])){
                         <h1>Total Sale:$500</h1>
                         <h3>Increased By 20%</h3>
                     </div>
+                    <!-- ...........test packet
+                        
+                     -->
+                     <!-- ----------- -->
+                     
         
                 </div>
+                
                 <br>
                 <hr>
-
-                
-                
-                <script src="../jquery.js"></script>
+               <script src="../jquery.js"></script>
                 
                 <div id="main">
                 <script src="../Controllers/adninjquery.js"></script>

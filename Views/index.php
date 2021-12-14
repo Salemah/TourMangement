@@ -24,7 +24,7 @@
     </div>
   </section>
     <header>
-     <img  id="logo" src="../Resources/../Resources/images/travel-luggage.png" alt=""> 
+     <img  id="logo" src="../Resources/../Resources/images/logo.png" alt=""> 
         <nav class=""  >
             <ul class="nav-bar">
                 <li><a href="#">Home</a></li>
@@ -61,7 +61,7 @@
       <div class="image-cards">
           <div class="image-card">
               <div class="image-card-banner">
-                  <img src="../Resources/images/1.jpg">
+                  <img src="../Resources/images/4.jpg" >
               </div>
               <div class="card-details">
                   <h1>Sylhet Premium Trip</h1>

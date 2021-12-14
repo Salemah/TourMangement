@@ -17,8 +17,8 @@
 
 
       <label for="username"></label> <br> <br>
-      <input " type=" text" name="username" id="username" placeholder="username" />
-     <center> <small class="validate" id="usernameerror"></small>  </center> 
+      <input  type=" text" name="username" id="username" placeholder="username" />
+      <small class="validate" id="usernameerror"></small>   
 
 
       <label style="font-family: Sans-serif ; color: #12044e" for="usertype"> Choose your role:</label>
