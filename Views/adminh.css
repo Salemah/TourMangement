@@ -15,10 +15,7 @@
     margin-top: 10px;
     
 }
-.left{
-  
 
-}
 .right-admin{
     margin-top: 0px;
 
@@ -33,6 +30,8 @@
     margin-right: 10px;
     margin-top: 10px;
 }
+
+
 /* list item */
 .list-item  {
     margin-top: 10px;
@@ -51,14 +50,16 @@
    
 
 }
-#logout-button{
+.list-item #logout-button{
+    
     margin-top: 50px;
-    margin-bottom: -20px;
     background-color: #067DC2;
     padding: 10px 20px;
     border: none;
+
     border-radius: 5px;
-    color: turquoise;
+    
+    
     margin-bottom: 16px;
 }
 .right-dashboard{
@@ -73,6 +74,7 @@
 }
 .image-box{
     display: flex;
+    margin: auto;
     
    
    
@@ -157,3 +159,4 @@ button:hover{
     background: rgb(162, 192, 236);
     border-radius: 5px;
 }
+

@@ -1,0 +1,19 @@
+.packge-container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.packge-container div{
+    background-color: rgb(10, 155, 238);
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 8px;
+}
+.packge-container div h1{
+    font-weight: 800;
+    
+
+}
