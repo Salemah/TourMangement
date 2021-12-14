@@ -2,6 +2,7 @@
 session_start();
 include ('header.php');
 require_once('../Model/usersmodel.php');
+//require_once('../Controllers/ajax.js');
 if(isset($_SESSION['flag'])){
     $conn = getConnection();
     $email = $_SESSION['email'];
@@ -11,6 +12,11 @@ if(isset($_SESSION['flag'])){
     $rr = "select id from users order by id";
     $query_run = mysqli_query($conn, $rr );
     $rows = mysqli_num_rows($query_run);
+    $packgecount = "select id from packege order by id";
+    $packge_query_run = mysqli_query($conn, $packgecount);
+    $packgerows = mysqli_num_rows($packge_query_run);
+    
+    
      
 
                         
@@ -23,8 +29,8 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="adminn.css">
-    <link rel="stylesheet" href="btton test.css">
+    <link rel="stylesheet" href="adminh.css">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Admin</title>
@@ -52,9 +58,10 @@ if(isset($_SESSION['flag'])){
                 <div class=" list-item ">
                     <button id="dashboard">Dashboard</button><br>
                     <button id="load">Users</button><br>
-                    <button>Packeges</button><br>
+                    <button  id="packege">Packeges</button><br>
                     <button>Accounts</button><br>
-                    <button id="logout-button"><a href="logout.php">Logout</a></button>
+                  
+                    <button  id="logout-button"><a href="logout.php">Logout</a></button>
                  </div>
             </div>
             <div class="right-dashboard">
@@ -62,12 +69,12 @@ if(isset($_SESSION['flag'])){
                 <div class="image-box">
                     <div class="first-box" id="s1">
                         <p>TotalCustomer</p>
-                        <h1>Person : <?= ''.$rows.'' ?> </h1>
+                        <h1>Person: <?= ' '.$rows.''?> </h1>
                         <h3>Increased By 60%</h3>
                     </div>
-                    <div class="first-box"id="s2"> 
+                    <div class="first-box"id="s2">
                         <p>TotalPackege</p>
-                        <h1>Packege:8</h1>
+                        <h1>Packege:<?= ' '.$packgerows.''?></h1>
                         <h3>Increased By 60%</h3>
                     </div>
                     <div class="first-box"id="s3">
@@ -81,74 +88,14 @@ if(isset($_SESSION['flag'])){
                 <hr>
 
                 
-                <!-- <div class="">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Packege</th>
-                                <th>Price</th>
-                                <th>Status</th>
-                                <th>Update</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Sajek</td>
-                                <td>6000</td>
-                                <td>Active</td>
-                                <td> <button class="btn">Update</button></td>
-
-                            </tr>
-                            <tr class="active-row">
-                                <td>Tanguarek</td>
-                                <td>6000</td>
-                                <td>Active</td>
-                                <td> <button class="btn">Update</button></td>
-                            </tr>
-                            <tr class="active-row">
-                                <td>Sajek</td>
-                                <td>6000</td>
-                                <td>Active</td>
-                                <td> <button class="btn">Update</button></td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </div> -->
+                
                 <script src="../jquery.js"></script>
+                
                 <div id="main">
-                <script>
-                       $(document).ready(function(){
-			             $("#load").on("click",function(e){
-                            $("#main").show();
-				        $.ajax({  
-				        	url:"userdata.php",
-					        type:"POST",
-					        success:function(data){
-						    $("#main").html(data);
-					}
-				});
-			});
-		});
-                </script>
+                <script src="../Controllers/adninjquery.js"></script>
                 </div>
-                <!-- dashboard -->
-                <div id="main">
-                <script>
-                       $(document).ready(function(){
-			             $("#dashboard").on("click",function(e){
-                            $("#main").hide();
-				//         $.ajax({  
-				//         	url:"userdata.php",
-				// 	        type:"POST",
-				// 	        success:function(data){
-				// 		    $("#main").html(data);
-				// 	}
-				// });
-			});
-		});
-                </script>
-                </div>
+               
+               
 
 
 

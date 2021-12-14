@@ -53,12 +53,13 @@
 }
 #logout-button{
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
     background-color: #067DC2;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    color: whitesmoke;
+    color: turquoise;
+    margin-bottom: 16px;
 }
 .right-dashboard{
     background-color: white;
@@ -104,18 +105,22 @@
     /* //margin: 25px 0; */
     font-size: 15px;
     font-family: sans-serif;
-    width: 76%;
+    width: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .styled-table tr th {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
+    /* #009879 */
+    background-color: #000000;
+    color: #ee0303;
+    text-align: right;
+    
+   
 }
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+    padding: 12px 25px;
+    
 }
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -132,15 +137,9 @@
 hr{
     width: 100%;
     margin-left: -4px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
-.btn{
-    background-color:#067DC2 ;
-    border: none;
-    color: white;
-    padding: 8px;
-    border-radius: 6px;
-}
+
 /* jquery button */
 
 .list-item button{
@@ -151,10 +150,10 @@ hr{
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
-    padding: 8px 9px;
+    padding: 6px 9px;
 }
 button:hover{
-    padding: 8px 9px;
+    padding: 6px 9px;
     background: rgb(162, 192, 236);
     border-radius: 5px;
 }
