@@ -9,12 +9,7 @@ if(isset($_SESSION['flag'])){
     $sql = "select * from users where email='$email'";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_assoc($result);
-
-
-    ?>
-
-
-
+?>
 <html>
 <html lang="en">
 <head>
@@ -24,11 +19,8 @@ if(isset($_SESSION['flag'])){
     <link rel="stylesheet" href="../Views/_Userprofile.css">
     <title>Document</title>
 </head>
-
-
-
 <body>
-  <div class="signup-box"> <br>
+   
   <table class="GeneratedTable">
   <thead>
     <tr>
@@ -37,39 +29,27 @@ if(isset($_SESSION['flag'])){
   </thead>
   <tbody>
     <tr>
-    <h2> <td> <b>Name :</b> <?= $row['username'] ?> </td> </h2> 
+    <h2> <td> Name : <?= $row['username'] ?> </td> </h2> 
     <tr>
-    <h2> <td> <b>Id :</b>  <?= $row['id'] ?> </td> </h2> 
+    <h2> <td> Id :  <?= $row['id'] ?> </td> </h2> 
     </tr>
     <tr>
-    <h2> <td> <b>Email :</b>  <?= $row['email'] ?> </td> </h2> 
+    <h2> <td> Email :  <?= $row['email'] ?> </td> </h2> 
     </tr>
     <tr>
-      <td> <b> Usertype: </b> Customer</td>
+      <td>  Usertype:  <?= $row['usertype'] ?></td>
     </tr>
     <tr>
-      <td><b>Phone number :</b> 01785555256</td>
+      <td>Phone number : 01785555256</td>
     </tr>
-    <tr>
-      <td> <center> <a href="user.php" class="myButton">Return Back</a> </center></td>
-    </tr>
+   
+        
     
   </tbody>
+  
 </table>
-   
- 
-          
-
-  </div>
-
-  
-  
+<a href="<?= $row['usertype'] ?>.php" class="myButton">Return Back</a>
 </body>
-
-
-
-
-
 <?php }else{
     header('location: Login.php');
 } ?>

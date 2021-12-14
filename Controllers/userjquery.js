@@ -1,0 +1,24 @@
+$(document).ready(function(){
+    $("#info").on("click",function(e){
+       $("#main").show();
+   $.ajax({  
+       url:"userprofile.php",
+       type:"POST",
+       success:function(data){
+       $("#main").html(data);
+}
+});
+});
+});
+$(document).ready(function(){
+    $("#infoPackege").on("click",function(e){
+       $("#main").show();
+   $.ajax({  
+       url:"userPackege.php",
+       type:"POST",
+       success:function(data){
+       $("#main").html(data);
+}
+});
+});
+});

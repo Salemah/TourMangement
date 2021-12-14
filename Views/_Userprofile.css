@@ -1,140 +1,61 @@
-body {
-    background-color: #b1e2ff;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .signup-box {
-    width: 460px;
-    height: 50px;
-    margin: auto;
-    background-color: #b1e2ff;
-    border-radius: 3px;
-  }
-  
-  .login-box {
-    width: 360px;
-    height: 280px;
-    margin: auto;
-    border-radius: 3px;
-    background-color: white;
-  }
-  
-  h1 {
-    text-align: center;
-    padding-top: 15px;
-  }
-  
-  h4 {
-    text-align: center;
-  }
-  
-  form {
-    width: 300px;
-    margin-left: 20px;
-    
-  }
-  
-  form label {
-    display: flex;
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
-  form input {
-    width: 100%;
-    padding: 7px;
-    border: none;
-    border: 1px solid gray;
-    border-radius: 6px;
-    outline: none;
-    
-  }
-form a{
-      text-decoration: none;
-      
-      padding: 10px 130px;
-    width: 320px;
-    height: 35px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 6px;
-    background-color: #067DC2;
-    color: white;
-    font-size: 18px;
+.proiftle-conainer{
+  background-color: whitesmoke;
+  padding: 3px;
+}
+.proiftle-conainer #profile-name{
+  background-color:#8ec8ff ;
+  padding: 10px;
+  text-align: center;
+}
 
-  }
-
-
-  
- #confrm{
-      margin-bottom: 20px;
-  }
-
-  p {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 15px;
-  }
-  .para-2 {
-    
-    color: rgb(17, 0, 0);
-    font-size: 15px;
-    margin-top: -10px;
-  }
-  .para-2 a {
-    color: #000a08;
-  }
- 
-  form input[type=submit]{
-    margin-top: 10px;
-    background-color: #067DC2;
-
-  }
-
- 
 
 table.GeneratedTable {
-  width: 100%;
-  background-color: #ffffff;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-color: #5b407d;
-  border-style: solid;
-  color: #000000;
+width: 100%;
+background-color: #ffffff;
+border-collapse: collapse;
+border-width: 1px;
+border-color: #5b407d;
+border-style: solid;
+color: #000000;
 }
 
 table.GeneratedTable td, table.GeneratedTable th {
-  border-width: 2px;
-  border-color: #170033;
-  border-style: solid;
-  padding: 30px;
+border-width: 1px;
+border-color: #170033;
+border-style: solid;
+padding: 10px;
 }
 
 table.GeneratedTable thead {
-  background-color: #8ec8ff;
+background-color: #8ec8ff;
+}
+table tbody tr td {
+  font-weight: bold;
 }
 
 
 .myButton {
-	box-shadow:inset 0px -3px 7px 0px #29bbff;
-	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
-	background-color:#004169;
-	border-radius:3px;
-	border:1px solid #c6c5ff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	padding:9px 23px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #263666;
+box-shadow:inset 0px -3px 7px 0px #29bbff;
+background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+background-color:#004169;
+border-radius:3px;
+border:1px solid #c6c5ff;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:15px;
+padding:9px 23px;
+text-decoration:none;
+text-shadow:0px 1px 0px #263666;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
-	background-color:#0688fa;
+background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+background-color:#0688fa;
 }
 .myButton:active {
-	position:relative;
-	top:1px;
+position:relative;
+top:1px;
 }
