@@ -34,7 +34,7 @@ $(document).ready(function(){
     $("#profile").on("click",function(e){
        $("#main").show();
    $.ajax({  
-       url:"userprofile.php",
+       url:"adminprofilr.php",
        type:"POST",
        success:function(data){
        $("#main").html(data);
