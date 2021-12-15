@@ -1,0 +1,34 @@
+.update-profile{
+    width: 50%;
+    margin: auto;
+    background-color: wheat;
+}
+#profile-name{
+   
+    font-size: 23px;
+}
+form{
+    text-align: center;
+    padding: 20px;
+}
+.update-profile input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px 5px;
+    background-color:floralwhite ;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.myButton{
+    margin-bottom: 30px;
+    padding:6px 9px;
+    border: none;
+    border-radius: 3px;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+#id{
+    visibility: hidden;
+}

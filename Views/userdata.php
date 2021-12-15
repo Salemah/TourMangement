@@ -32,7 +32,8 @@ else
 			$output.= "<tr><td>{$row["id"]}</td>
 			        <td>{$row["username"]}</td>
 			        <td>{$row["email"]}</td>
-			        <td><button ><a href='updatepackege.php?deleteid={$row["id"]}'>Delete</a></button></td>
+			        <td><button ><a href='deleteuser.php?deleteid={$row["id"]}'>Delete</a></button>
+			        <button ><a href='edituser.php?editid={$row["id"]}'>Edit</a></button></td>
 			       
 			        </tr>";
 		}

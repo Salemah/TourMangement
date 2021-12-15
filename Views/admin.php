@@ -60,6 +60,7 @@ if(isset($_SESSION['flag'])){
                     <button id="load">Users</button><br>
                     <button  id="packege">Packeges</button><br>
                     <button id="profile">My Profile</button><br>
+                    <button id="updateprofile">Update Profile</button><br>
                     <button  id="logout-button"><a href="logout.php">Logout</a></button>
                  </div>
             </div>
@@ -111,14 +112,7 @@ if(isset($_SESSION['flag'])){
                 <div id="main">
                 <script src="../Controllers/adminjqueryy.js"></script>
                 </div>
-               
-               
-
-
-
-
-
-            </div>
+               </div>
 
         </div>
 

@@ -61,6 +61,18 @@ $(document).ready(function(){
 });
 });
 });
+$(document).ready(function(){
+    $("#updateprofile").on("click",function(e){
+       $("#main").show();
+   $.ajax({  
+       url:"updateprofile.php",
+       type:"POST",
+       success:function(data){
+       $("#main").html(data);
+}
+});
+});
+});
 
 
 
