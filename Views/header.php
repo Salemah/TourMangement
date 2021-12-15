@@ -30,10 +30,8 @@
         <nav class="">
             <ul class="nav-bar">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="">Package</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Resort</a></li>
-                <li><a href="">ShopHobe</a></li>
+                <li><a href="allpackege.php">Package</a></li>
+                <li><a href="events.php">Events</a></li>
                 <li><a href="">RentHobe</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
