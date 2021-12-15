@@ -36,6 +36,7 @@ else
 			        <td>{$row["Name"]}</td>
 			        <td>{$row["Description"]}</td>
 			        <td>{$row["Price"]}</td>
+					
 			        </tr>";
 		}
 		$output.='</table>';

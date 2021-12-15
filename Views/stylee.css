@@ -80,7 +80,7 @@ background-image:linear-gradient(0deg, rgba(72, 108, 133, 0.6), rgba(17, 15, 16,
 background-repeat: no-repeat;
 background-size: 1300px;
 height: 500px;
-
+/* align-items: center; */
     width: 80%;
     margin: auto;
     margin-top: 30px;
@@ -112,7 +112,7 @@ height: 500px;
     background-color: #067DC2;
     padding: 10px 14px;
     border-radius: 5px;
-    margin-left: -90px;
+
 }
 .bgimg a:hover{
     background-color:#3B82F6 ;
