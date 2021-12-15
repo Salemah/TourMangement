@@ -1,0 +1,14 @@
+body{
+    background-image: url("../Resources/images/tour1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+   
+    
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
