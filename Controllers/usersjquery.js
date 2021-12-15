@@ -22,3 +22,15 @@ $(document).ready(function(){
 });
 });
 });
+$(document).ready(function(){
+    $("#recenttour").on("click",function(e){
+       $("#main").show();
+   $.ajax({  
+       url:"RecentTour.php",
+       type:"POST",
+       success:function(data){
+       $("#main").html(data);
+}
+});
+});
+});

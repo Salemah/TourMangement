@@ -110,17 +110,7 @@ table,th,td{
     margin-bottom: 20px;
 
 }
-.order{
-    background-color: #00f853;
-    width: 100%;
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 30px ;
-    border-radius: 5px;
-    
-   
-}
+
 
 .thanks{
     
@@ -198,4 +188,29 @@ table,th,td{
    
     padding:10px;
     font-size: 19px;
+}
+/* .bottomtop-setion{
+    display: flex;
+    background-color: turquoise;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.order{
+    background-color: #142419;
+    width: 250px;
+} */
+/* .order{
+    background-color: #00f853;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 30px ;
+    border-radius: 5px;
+    
+   
+} */
+.bottom-middle{
+    display: flex;
+    flex-wrap: wrap
 }
