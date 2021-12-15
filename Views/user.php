@@ -9,6 +9,8 @@ if(isset($_SESSION['flag'])){
     $sql = "select * from users where email='$email'";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_assoc($result);
+    $q="SELECT * from packege";
+    $resultt=$conn->query($q);
 
 
     ?>
@@ -22,7 +24,8 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="customers.css">
+    <link rel="stylesheet" href="customerts.css">
+    <link rel="stylesheet" href="userPackege.css">
     <title>UserProfile</title>
 </head>
 
@@ -37,14 +40,10 @@ if(isset($_SESSION['flag'])){
                     </div>
                     <div class="list">
                         <li style="color: black;"> <a  id="info">My Profile </a> </li>
-                        <li> <a id="infoPackege">Recent Order </a> </li>
-                        <li> <a href="">Recent Tour </a> </li>
+                        <li> <a id="infoPackege">Packege </a> </li>
+                        <li> <a id="recenttour">Recent Tour </a> </li>
                         <li> <a href="">Tour guide </a> </li>
-                        
-                       
-                        
-
-                    </div>
+                  </div>
                     <br> <br> <br>
                     <a href="logout.php" class="myButton">Logout</a>  
                         
@@ -72,89 +71,39 @@ if(isset($_SESSION['flag'])){
 
                 </div>
                 <script src="../jquery.js"></script>
-                
                 <div id="main">
-                <script src="../Controllers/userjquery.js"></script>
-                </div>
-                <!-- <div class="right-middle">
+
+                <div class="bottom-middle"> 
+                    <?php
+                    $output='<div class="packge-container"  border="1" width=100%>';
+                    if($resultt->num_rows>0)
+                    {
+                        while($row=$resultt->fetch_assoc())
+                        {
+                            $output.= "
+                                    <div>
+                                    <h1>{$row["Name"]}</h1>
+                                    <p>{$row["Description"]}</p>
+                                    <p>{$row["Price"]}</p>
+                                    </div>";
+                        }
+                        $output.='</div>';
+                    }
+                    else
+                        echo "O results";
+                        $conn->close();
+                        echo $output;
+                        ?>      
                 
-                   
-                            <div class="bottomtop-setion"> 
-                            
-                                
-                                <div class="order">
-                               
-                                    <h1 style="font-family:Comic Sans MS ;">sajek</h1>
-                                    <br>
-                                    <h4>2 days </h4>
-                                    <h5>price-5000tk</h5>
-                                    <br>
-
-                                    <button onclick="sajekFunction()" class="myButtonbuy"> buy  </button>  
-                                </div>
-                                <div class="order">
-                                    <h1 style="font-family:Comic Sans MS ;">coxsbazar</h1>
-                                    <br>
-                                    <h4>4 days and 3 nights</h4>
-                                    <h5>price-4000tk</h5>
-                                    <br>
-
-                                    <button onclick="coxsbazarFunction()" class="myButtonbuy"> buy </button>  
-                                   
-                                </div>
-                                <div class="order">
-                                    <h1 style="font-family:Comic Sans MS;">bandarban </h1>
-                                    <br>
-                                    <h4>2 days and 3 nights</h4>
-                                    <h5>price-5000tk</h5>
-                                    <br>
-
-                                    <button onclick="bandarbanFunction()" class="myButtonbuy"> buy  </button>  
-                                   
-                                </div>
-                                <div class="order">
-                                    <h1 style="font-family:Comic Sans MS ;" > sylhet</h1>
-                                    <br>
-                                    <h4>Day trip</h4>
-                                    <h5>price-3000tk</h5>
-                                    <br>
-
-                                    <button onclick="sylhetFunction()" class="myButtonbuy"> buy  </button>  
-                                </div>
-                                </div>
-                                <div class="order">
-                                <center> 
-                                    <h1 style="font-family:Comic Sans MS;">Tanguar Haor</h1>
-                                    <br>
-                                    <h4>2 days and 3 nights</h4>
-                                   
-                                    <h5>price-7000tk</h5>
-                                    <br>
-
-                                   <button onclick="tanguarFunction()" class="myButtonbuy"> buy  </button>      
-                                  
-                                </div>
-                                
-                                
-                            </div>
-                            <br> <br>
-
-                            <center>  <input type="button"  onclick="checkoutFunction()"  class="myButtonbuy" id="button" value="Confirm Purchase">  </center>
-                           
-                            <center> <div class="thanks"  for="thanks" id="content"> </div></center>
-                            <script src="../jquery.js"></script>
-                            <div class="userprofile">
-                                <script src="../Controllers/adninjquery.js"></script>
-                            </div>
-                           
+                
+                </div>
+                <div id="main">
 
 
-                    </div>
-                    
-
-
-
-                </div> -->
+                <script src="../Controllers/usersjquery.js"></script>
+                </div>
+            
+               
               
 
 
@@ -173,7 +122,8 @@ function tanguarFunction() {
 }
 
 function coxsbazarFunction() {
-  alert("Coxs bazar package successfully added to cart");
+    
+  alert("package successfully added to cart");
 }
 
 function sylhetFunction() {
@@ -195,7 +145,7 @@ function sajekFunction() {
 <script>
 
 function checkoutFunction() {
-
+ 
 
     $('#content').load('thanks.php');
 

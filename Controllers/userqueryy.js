@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $("#recenttour").on("click",function(e){
+       $("#mainn").show();
+   $.ajax({  
+       url:"RecentTour.php",
+       type:"POST",
+       success:function(data){
+       $("#mainn").html(data);
+}
+});
+});
+});
