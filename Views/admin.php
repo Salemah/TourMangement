@@ -65,6 +65,24 @@ if(isset($_SESSION['flag'])){
             </div>
             <div class="right-dashboard">
                 <h2> <i class="fas fa-home"></i> Dashboard</h2>
+               <div class="">
+               <?php
+                     
+                     $jsondata=file_get_contents("customerinfo.json");
+                     $data=json_decode($jsondata,true);
+                     foreach($data['admin'] as $b)
+                     { ?>
+
+                      <h2> <b> <?php echo "Hey "  ,$row['username'];   ?> </b>   </h2> 
+
+                      <h3> <b> <?php echo   $b['info']; ?> </b>   </h3> 
+
+
+                    <?php 
+                       }
+
+                    ?>
+               </div>
                 <div class="image-box">
                     <div class="first-box" id="s1">
                         <p>TotalCustomer</p>
@@ -81,10 +99,7 @@ if(isset($_SESSION['flag'])){
                         <h1>Total Sale:$500</h1>
                         <h3>Increased By 20%</h3>
                     </div>
-                    <!-- ...........test packet
-                        
-                     -->
-                     <!-- ----------- -->
+                  
                      
         
                 </div>
@@ -94,7 +109,7 @@ if(isset($_SESSION['flag'])){
                <script src="../jquery.js"></script>
                 
                 <div id="main">
-                <script src="../Controllers/adninjquery.js"></script>
+                <script src="../Controllers/adminjqueryy.js"></script>
                 </div>
                
                

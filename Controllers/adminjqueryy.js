@@ -13,10 +13,29 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#dashboard").on("click",function(e){
-       $("#main").hide();
+       $("#main").show();
+   $.ajax({  
+       url:"dashboard.php",
+       type:"POST",
+       success:function(data){
+       $("#main").html(data);
+}
+});
+});
+});
+$(document).ready(function(){
+    $("#addpackege").on("click",function(e){
+       $("#main").show();
+   $.ajax({  
+       url:"addpackege.php",
+       type:"POST",
+       success:function(data){
+       $("#main").html(data);
+}
+});
+});
+});
 
-});
-});
 
 $(document).ready(function(){
     $("#packege").on("click",function(e){
@@ -42,6 +61,8 @@ $(document).ready(function(){
 });
 });
 });
+
+
 
 
 

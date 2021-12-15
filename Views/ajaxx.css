@@ -1,0 +1,19 @@
+.styled-table tr th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: transparent;
+
+padding: 6px 10px;
+border: none;
+
+}
+button :hover{
+   
+}

@@ -4,5 +4,15 @@
         {
             "info":"Welcome to Customer page. Please choose your suitable package."
         } 
+    ],
+
+    
+    "admin":[
+    
+        {
+            "info":"Welcome to admin page. Please choose your suitable package."
+        } 
     ]
+
+    
     }
