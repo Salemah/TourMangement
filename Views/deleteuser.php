@@ -6,7 +6,7 @@ if(isset($_GET['deleteid'])){
 
     $conn = getConnection();
     $sql = "delete from users where id={$id}";
-    //$sql = "insert into packege( Name, Description, Price) values ('$Name','$Description','$Price')";
+
     $result = mysqli_query($conn,$sql);
     if($result){
         ?>

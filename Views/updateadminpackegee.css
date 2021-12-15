@@ -1,17 +1,20 @@
 
 .signup-box {
+    
     width: 360px;
     height: 660px;
-    margin: auto;
+    text-align: center;
+    
     background-color: #6685ecb9;
     border-radius: 3px;
+    margin: auto;
   }
   
 
 
 
   
-  form {
+   form {
     width: 300px;
     margin-left: 20px;
     
@@ -25,20 +28,23 @@
     border: 1px solid gray;
     border-radius: 6px;
     outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
   }
-
-
- 
-
- 
-  form input[type=submit]{
-    font-style: italic;
-    color: #12044e;
-    font-family: Sans-serif;
-    font-size: large;
+  button{
+    background-color: rgb(3, 103, 197);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px;
-    background-color:  #d8b0cb;
+    color: rgb(255, 255, 255);
+    
+}
+  
 
-  }
+
+
+ 
+
+ 

@@ -3,7 +3,7 @@
 
 <head>
   <title>Sign Up | By Code Info</title>
-  <link rel="stylesheet" href="addpackeges.css" />
+  <link rel="stylesheet" href="addpackegess.css" />
   
 </head>
 

@@ -16,18 +16,22 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Views/_Userprofile.css">
+    <link rel="stylesheet" href="updateprofile.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="updateeprofilee.php" method="POST" >
-    <h1 id="profile-name">My Profile</h1>
+    <div class="update-profile">
+    <form action="updateeprofildb.php" method="POST" >
+    <h3 id="profile-name">Update Profile</h3>
+    <input id="id" type="text" name="id" placeholder="email" value="<?= $row['id'] ?>"> <br>
     <input type="text" name="name" placeholder="name" value="<?= $row['username'] ?>"><br>
     <input type="text" name="email" placeholder="email" value="<?= $row['email'] ?>"><br>
-    <input type="text" name="id" placeholder="email" value="<?= $row['id'] ?>"><br>
+    
     <input type="password" name="password" placeholder="email" value="<?= $row['userpassword'] ?>"><br>
     <button class="myButton" type="submit" name="submit">Update</button>
+   
     </form>
+    </div>
    
   
 </body>
