@@ -10,6 +10,8 @@ require_once('../Model/usersmodel.php');
 session_start();
 
 if(isset($_POST['login'])){
+    $email = $_POST['email'];
+  $password= $_POST['password'];
 
     if (empty($email)) {
         $emailerror = 'please enter your email';
@@ -37,7 +39,8 @@ if(isset($_POST['login'])){
     $sql = "select * from users where email='$email' and userpassword='$password'";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_assoc($result);
-    if(count($row) > 0){
+    if(count($row) > 0 ){
+        
         if($row["usertype"]=="customer")
             {   
               $_SESSION['flag'] = true;
@@ -64,6 +67,11 @@ if(isset($_POST['login'])){
                   header("location: ../Views/tourguide.php");
             }
     }
+    else {
+        echo "pasword worng";
+    }
+
+
     
     }
 

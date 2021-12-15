@@ -15,7 +15,7 @@ function loginvalidateForm() {
 
     // Validate email
     if (email == "") {
-        printError("emailerror", "শালারপুত Email দে");
+        printError("emailerror", " Email ");
     } else {
         printError("emailerror", "");
         emailerror = false;
@@ -23,7 +23,7 @@ function loginvalidateForm() {
 
     // Validate password
     if (password == "") {
-        printError("passworderror", "PASSWORD দে বেয়াদব কোথাকার");
+        printError("passworderror", "PASSWORD ");
     } else {
         printError("passworderror", "");
         passworderror = false;
