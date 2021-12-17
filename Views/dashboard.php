@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="">
     <button id="addpackege"> Add Packege </button>
+    <button id="adduser"> Add User </button>
+    <button id="addtourguide"> Add Packege </button>
+    </div>
     <script src="../jquery.js"></script>
                 
                 <div id="main">
