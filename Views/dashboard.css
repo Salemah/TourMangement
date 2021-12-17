@@ -1,0 +1,22 @@
+
+
+.dashbord-button{
+    background-color: rgba(10, 154, 238, 0.637);
+    padding: 30px;
+    height: 400px;
+    text-align: center;
+}
+.d-btn{
+    background-color: rgb(10, 155, 238);
+    padding: 8px 9px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.d-btn:hover{
+    padding: 8px 9px;
+background-color:rgb(0, 58, 92) ;
+}
