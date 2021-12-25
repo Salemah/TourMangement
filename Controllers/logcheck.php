@@ -38,9 +38,11 @@ if(isset($_POST['login'])){
     $conn = getConnection();
     $sql = "select * from users where email='$email' and userpassword='$password'";
     $result = mysqli_query($conn,$sql);
-    $row = mysqli_fetch_assoc($result);
-    if(count($row) > 0 ){
-        
+   
+    $count = mysqli_num_rows($result);
+    // $row = mysqli_fetch_assoc($result);
+    if($count == 1 ){
+        $row = mysqli_fetch_array($result);
         if($row["usertype"]=="customer")
             {   
               $_SESSION['flag'] = true;
@@ -68,7 +70,7 @@ if(isset($_POST['login'])){
             }
     }
     else {
-        echo "pasword worng";
+        $passemailerror = 'Email or Password is incorrect';
     }
 
 
