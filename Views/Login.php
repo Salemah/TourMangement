@@ -1,5 +1,8 @@
 
-
+<?php
+session_start();
+include ('header.php');
+?>
 
 
 
@@ -10,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Views/Login.css">
+    <link rel="stylesheet" href="../Views/Loginn.css">
     
     <title>Login</title>
 </head>
@@ -20,14 +23,18 @@
      
          <div class="login-body">
             <div class="right-half">
-                <img id="logo" src="images/logo.png" alt=""><br>
-
+                <img id="logo" src="../Resources/images/logo.png" alt=""><br>
+                <?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>  <br>  
+     	<?php } ?>
+                
+                    
                 <form action="../Controllers/logcheck.php" method="post" >
                 <input class="inp" type="text" name="email" id="email" placeholder="email"   >  <br>
 
                 <?php   if (isset($emailerror)) { ?>
 
-                    <b>  <span style="color: red;">  <?php echo $emailerror ; ?></span>   </b>   <br> <br>
+                  <span style="color: red;">  <?php echo $emailerror ; ?></span>   <br>  
   
                 <?php  } ?> 
 
@@ -36,7 +43,7 @@
                 <?php   if (isset($passworderror)) { ?>
 
                 
-                    <b>  <span style="color: red;"><?php echo $passworderror ; ?></span>   </b> <br> <br>
+                    <span style="color: red;"><?php echo $passworderror ; ?></span>  <br>
 
 
  
