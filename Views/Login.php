@@ -1,6 +1,6 @@
 
 <?php
-include ('header.php');
+// include ('header.php');
 ?>
 
 
@@ -12,13 +12,30 @@ include ('header.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Views/Login.css">
+    <link rel="stylesheet" href="../Views/Loginn.css">
     
     <title>Login</title>
 </head>
 
 <body>
+    <!-- ........... -->
+    <header>
+        <img id="header-logo" src="../Resources/images/logo.png" alt="">
+        <nav class="">
+            <ul class="nav-bar">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="allpackege.php">Package</a></li>
+                <li><a href="events.php">Events</a></li>
+                <li><a href="">RentHobe</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- <a class="btn" href="Login.html">Sign in</a> -->
+    </header>
+
+<!-- ............. -->
     <section  class="cxv" >
+    
      
          <div class="login-body">
             <div class="right-half">
@@ -48,7 +65,7 @@ include ('header.php');
  
                 <?php  } ?> 
 
-                <input type="checkbox" name="chkremember" id="check-box"  > Remember Me
+                <input type="checkbox" name="rememberme" id="check-box"  > Remember Me
 
 
                 <a href="" id="Forgot-pass">Forgotten Password?</a><br>

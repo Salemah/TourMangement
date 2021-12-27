@@ -71,7 +71,7 @@ if(isset($_POST['login'])){
             }
     }
     else {
-        $passemailerror = 'Email or Password is incorrect';
+        header("Location: ../Views/Login.php?error=Incorect User name or password");
     }
 
 
