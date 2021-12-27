@@ -5,7 +5,45 @@
 body{
     background-color: #342188;
 }
+/* login-header */
+header{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+#header-logo{
+    width: 60px;
+    height: 28px;
+    padding: 10px;
+    /* margin-left: 70px; */
+}
+.nav-bar  {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+  
+  }
+  .nav-bar li a {
+    margin-left:20px ;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: beige;
+   
+    
+}
+.nav-bar li  :hover {
+    color: white;
+   background-color:#067DC2 ;
+   border-radius: 6px;
+   
+    
+}
 
+  /* login-header end */
 #logo{
     width: 50px;
     margin-bottom: 20px;
@@ -15,6 +53,9 @@ body{
     margin:auto;
    
 }
+/* .cxv{
+    padding-bottom: 50px;
+} */
 
 
 .right-half{
@@ -63,15 +104,15 @@ body{
     color:rgb(163, 199, 233) ;
 }
 .error {
-    color: red;
+    color: rgb(128, 0, 0);
     font-size: 90%;
 }
 /* error message top */
-.error-message{
+.error{
     
     width: 280px;
     margin: auto;
 
-    background: rgba(247, 209, 153, 0.397);
+    background: rgba(136, 117, 89, 0.671);
     padding: 10px;
 }
