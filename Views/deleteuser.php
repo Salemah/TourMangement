@@ -10,9 +10,9 @@ if(isset($_GET['deleteid'])){
     $result = mysqli_query($conn,$sql);
     if($result){
         ?>
-        <!-- <script>alert("package successfully added ");</script> -->
+        <script>alert("package successfully added ");</script> 
         <?php
-      header('location:admin.php');
+      header('location: admin.php');
     }
     else{
         echo "failed";

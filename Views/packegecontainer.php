@@ -12,7 +12,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="tourmanagement";
+$dbname="phpproject";
 $conn=new mysqli($servername,$username,$password,$dbname);
 if($conn->connect_error)
 {
@@ -34,7 +34,7 @@ else
                     <h1>{$row["Name"]}</h1>
 			        <p>{$row["Description"]}</p>
 			        <p>{$row["Price"]}</p>
-					<td><button ><a href='updateadminpackege.php?updateid={$row["Id"]}'>Update</a></button></td>
+					<td><button ><a   href='updateadminpackege.php?updateid={$row["Id"]}'>Update</a></button></td>
 					<td><button ><a href='deletepackege.php?deleteid={$row["Id"]}'>Remove</a></button></td>
                     </div>
 			       ";
@@ -49,6 +49,7 @@ else
 $conn->close();
 echo $output;
 ?>
+
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 	$dbuser = 'root';
 	$dbpass = '';
 	$host 	= 'localhost';
-	$dbname	= 'tourmanagement';
+	$dbname	= 'phpproject';
 
 
 	function getConnection(){
